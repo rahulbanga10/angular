@@ -1,0 +1,20 @@
+ <div *ngIf="isAdded">
+    <button type="button" class="btn btn-primary mb-2" (click)="addSwitch()"  >Add More</button>
+    <button type="button" class="btn btn-primary mb-2" routerLink="/tableList/{{tablename}}" routerLinkActive=""  >Back</button>
+ </div>
+ <div *ngIf="!isAdded">
+<h1 class="text-center" >Add Record For {{tablename}}</h1>
+<form #form="ngForm" >
+  <div *ngFor="let column of columnName; let i=index;">
+    <div class="form-group row"  *ngIf="i>0" >
+      <label for="inputEmail3" class="col-sm-2 col-form-label">{{column}}</label>
+      <div class="col-sm-7">
+        <input type="text" class="form-control"  name="{{column}}" id="inputEmail3"  name="{{column}}" ngModel>
+      </div>
+    </div>
+  </div>
+    <button type="submit" class="btn btn-primary mb-2" (click)="saveData(form.value)"  >Update Data</button>
+    <!-- {{form}} -->
+  </form>
+</div>
+  <p *ngIf="isAdded">this is added</p>

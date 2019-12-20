@@ -1,0 +1,6 @@
+<p >hero-child works! {{msg}}</p>
+<div>this is common Message {{commonMessage}} this is commonM {{commonM.commonMessage}}</div>
+<input type="text" #commonMsg (keyup)="updateCommon(commonMsg.value)">
+<button  (click)="relaseEvent()">Release Child Mesage</button>
+<button (click)="latestMsg()" > Get Latest Message</button>
+

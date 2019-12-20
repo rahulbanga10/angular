@@ -1,0 +1,11 @@
+:host-context(.dark) {
+  display: block;
+  background: pink;
+  border: 1px solid black;
+}
+
+:host-context(.light) {
+  display: block;
+  background: blue;
+  border: 1px solid black;
+}

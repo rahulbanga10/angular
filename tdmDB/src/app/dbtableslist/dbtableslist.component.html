@@ -1,0 +1,47 @@
+<div class="card text-center">
+    <div class="card-header">
+      Publicis Sapient
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">PEGA DATABASE UTILITY</h5>
+      <div class="card-text">
+<div class="table-responsive-xl">
+    <table class="table">
+  <tr>
+  <th>
+    <div class="col-7">
+     Sheet Name
+    </div>
+  </th>
+  <th>
+      <div class="">
+       Action
+      </div>
+    </th>
+    </tr>
+    <tr *ngFor="let table of tableList">
+  <td>
+  <div class="col-7">
+  {{table}}
+  </div>
+  </td>
+  <td>
+      <div class="">
+          <button type="button" class="btn btn-primary" routerLink="/tableList/{{table}}" routerLinkActive=""  >Update</button>
+      </div>
+    </td>
+  </tr>
+  </table>
+  </div>
+
+</div>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
+      <div class="card-footer text-muted">
+       List of All The Tables For TDM <!-- 2 days ago -->
+      </div>
+    </div>
+
+
+
+

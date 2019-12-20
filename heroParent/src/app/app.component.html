@@ -1,0 +1,12 @@
+<router-outlet class="light">
+{{commonMsg.commonMessage}}
+{{child.str}}
+{{title}}
+This is new Msag{{newMsg}}
+This is parent Area
+
+
+  <app-hero-child [msg]="parent" (parentmsg)="tester($event)" #child  ></app-hero-child>
+
+<input type="text" #app >
+</router-outlet>

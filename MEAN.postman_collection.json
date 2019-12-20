@@ -1,0 +1,167 @@
+{
+	"id": "172e3ca2-31b0-0ea6-7e89-d492a3775372",
+	"name": "MEAN",
+	"description": "",
+	"order": [
+		"f8ba4bbe-9c1e-c9a9-a904-3b1a332ef322",
+		"db48df70-5636-dffa-3320-20b5ce29c309",
+		"e7423c6c-3c7d-86fa-d5c5-8066e1363d5c",
+		"6ffe4c13-94fe-8b98-e6fc-7a5220bf24bb"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1574505746780,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "6ffe4c13-94fe-8b98-e6fc-7a5220bf24bb",
+			"headers": "",
+			"headerData": [],
+			"url": "",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "172e3ca2-31b0-0ea6-7e89-d492a3775372",
+			"data": null,
+			"dataMode": "params",
+			"name": "updateRecord",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1575127221107,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "db48df70-5636-dffa-3320-20b5ce29c309",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/api/video",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "172e3ca2-31b0-0ea6-7e89-d492a3775372",
+			"data": null,
+			"dataMode": "params",
+			"name": "get_Videos",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1574508100310,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e7423c6c-3c7d-86fa-d5c5-8066e1363d5c",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/api/video/5dd90ee9a142894de0435d3c",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "172e3ca2-31b0-0ea6-7e89-d492a3775372",
+			"data": [
+				{
+					"key": "title",
+					"value": "updated_video2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "url",
+					"value": "updated_video_url2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "updated_video_description2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "update_video",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1574508943462,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f8ba4bbe-9c1e-c9a9-a904-3b1a332ef322",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/api/video",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "title",
+					"value": "Node_Title",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "url",
+					"value": "https://www.youtube.com/watch?v=lmteIO2FQYA&list=PLC3y8-rFHvwhBRAgFinJR8KHIrCdTkZcZ&index=44",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Node_description",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1574508112032,
+			"name": "add Video",
+			"description": "",
+			"collectionId": "172e3ca2-31b0-0ea6-7e89-d492a3775372",
+			"responses": []
+		}
+	]
+}
